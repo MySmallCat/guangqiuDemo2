@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mkl-8O-Gyk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dGd-KJ-TdJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2303.1999999999998" y="-628.33583208395805"/>
+        </scene>
+        <!--幸运球场-->
+        <scene sceneID="f6q-55-Zb9">
+            <objects>
+                <viewController id="GIf-6B-2zJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paU-Tf-uuD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.96866443050097295" blue="0.67721382477124648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="3Uq-k3-D1J"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="幸运球场" image="groupSeven" id="3id-bz-kH8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hB-Yf-iHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="-242.42878560719643"/>
+        </scene>
+        <!--直播-->
+        <scene sceneID="JhZ-HJ-jbW">
+            <objects>
+                <viewController id="kQZ-eq-XNG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vkm-O5-zAC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.77350661474105187" green="1" blue="0.53127281944967364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oMy-Em-sig"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="直播" image="live" id="S8Y-SR-ZUi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16c-bQ-qyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2026" y="538"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Jph-8H-3j8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Mkl-8O-Gyk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YaL-gD-tNE">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dcb-pf-H2Y" kind="relationship" relationship="viewControllers" id="hPU-aj-oHs"/>
+                        <segue destination="GIf-6B-2zJ" kind="relationship" relationship="viewControllers" id="K4G-TH-ZKl"/>
+                        <segue destination="kQZ-eq-XNG" kind="relationship" relationship="viewControllers" id="HvU-N5-lM6"/>
+                        <segue destination="GKO-Ec-Sjg" kind="relationship" relationship="viewControllers" id="AG9-I8-FTo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0J-tc-7Yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="zfG-Vy-QSN">
+            <objects>
+                <viewController id="GKO-Ec-Sjg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pIo-rz-Xqu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.94538300534992403" blue="0.91038913044826786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="q8f-Np-cWr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="my" id="dKB-4W-k98"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sY-NU-SUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="1001"/>
+        </scene>
+        <!--比分-->
+        <scene sceneID="DAS-pt-DJC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dcb-pf-H2Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="比分" image="thescore" id="6JQ-Qs-C6a"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BfK-FT-18K">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oVx-wR-Weh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKy-mI-Rnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="-628.33583208395805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="groupSeven" width="26" height="26"/>
+        <image name="live" width="24" height="27"/>
+        <image name="my" width="26" height="26"/>
+        <image name="thescore" width="20" height="26"/>
+    </resources>
+</document>
